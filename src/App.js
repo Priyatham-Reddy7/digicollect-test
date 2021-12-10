@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react'
 import ProfileCard from './Components/ProfileCard';
+import Navbar from './Components/Navbar';
 
 
 function App() {
@@ -11,22 +12,28 @@ function App() {
     const getResponse = async () =>{
     const response = await fetch('https://reqres.in/api/users')
     const output = await response.json();
-    setUsers(output.data)}
+    setUsers(output.data)}   
     getResponse();
   }, [])
 
   return (
     <div className="App">
-        {users.map((user)=>(
-          <ProfileCard 
+    <Navbar />
+    <section className="p-5">
+      <div className="container">
+        <div className="row text-center g-4">         
+                  {users.map((user)=>(
+                    <ProfileCard 
               key={user.id}
-             fname={user.first_name}
-             lname={user.last_name}
-             imageURL={user.avatar}
-             email={user.email}
-          />
-          ))}
-    </div>
+              fname={user.first_name}
+              lname={user.last_name}
+              imageURL={user.avatar}
+              email={user.email} />                  
+          ))}                    
+        </div>
+      </div>
+    </section>  
+  </div>
   );
 }
 
