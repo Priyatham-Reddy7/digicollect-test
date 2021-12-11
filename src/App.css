@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #D7E9F7;
+
+}
+/* ---------------card------------ */
+.card-text{
+    text-align: left;
+    padding-bottom: 2px;
+}
+
+.card{
+    padding: 1px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-text{
+    line-height: 0.1;
+}
+/* ---------Navbar------------ */
+
+.bi{
+    color: #fff;
+}
+
+.nav-link{
+   
+    
+}
+
+/* ------------footer----------- */
+
+.footer-icons{
+    margin-left: 25px;
+    color: #fff
+}
+
+.name{
+    color: rgb(46, 123, 173);
+}
+
+
+
+
+
+

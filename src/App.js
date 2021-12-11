@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import ProfileCard from './Components/ProfileCard';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -29,10 +30,20 @@ function App() {
               lname={user.last_name}
               imageURL={user.avatar}
               email={user.email} />                  
+          ))} 
+          {/*Calling it twice to double the contact information*/}
+          {users.map((user)=>(
+                    <ProfileCard 
+              key={user.id}
+              fname={user.first_name}
+              lname={user.last_name}
+              imageURL={user.avatar}
+              email={user.email} />                  
           ))}                    
-        </div>
-      </div>
-    </section>  
+         </div>
+       </div>
+     </section>
+    <Footer /> 
   </div>
   );
 }
