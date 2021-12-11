@@ -11,9 +11,6 @@ const Footer = () => {
                 <i className="bi bi-linkedin h4 footer-icons"></i>
                 <i className="bi bi-twitter h4 footer-icons"></i>
                 <i className="bi bi-facebook h4 footer-icons"></i>
-                {/* <i className="bi bi-house-door-fill h3 "></i>
-                <i className="bi bi-search h3 "></i>
-                <i className="bi bi-chat-square-fill h3 "></i> */}
                 </a>
             </div>
         </footer>
