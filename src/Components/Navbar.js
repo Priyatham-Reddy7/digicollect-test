@@ -30,7 +30,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                        <i className="bi bi-people-fill p-2"></i>Attendance
+                        <i className="bi bi-people p-2"></i>Attendance
                         </a>
                       </li>
                       <li className="nav-item dropdown">
