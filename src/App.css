@@ -8,11 +8,13 @@
 body {
     background: #D7E9F7;
 
+
 }
-/* ---------------card------------ */
+/* ---------------Profile card------------ */
 .card-text{
     text-align: left;
     padding-bottom: 2px;
+    line-height: 0.5rem;
 }
 
 .card{
@@ -21,9 +23,26 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.card-text{
-    line-height: 0.1;
+.image{
+    width: 50%;
+    border: 4px solid transparent;
+    background: linear-gradient(50deg, #0fd4aa 10%, #0e6c97 100%);
 }
+
+.btn-role{
+    cursor: default;
+    background-color: #FF5E78;
+    color: #F6F6F6;
+    border-radius: 10px;
+
+}
+hr {
+    height: 1px;
+    background-color: #000;
+    border:1px solid black;
+}
+
+
 /* ---------Navbar------------ */
 
 .bi{
@@ -31,8 +50,12 @@ body {
 }
 
 .nav-link{
+   color: #fff!important;
    
-    
+}
+
+.nav-item:hover{
+    background-color: #537EC5
 }
 
 /* ------------footer----------- */
@@ -46,8 +69,34 @@ body {
     color: rgb(46, 123, 173);
 }
 
+.help-desk{
+    position: relative;
+    margin-left: 50%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+}
 
 
+/* ------------media queries------------- */
+@media (max-width: 400px) {
+    .card-text{
+        font-size: 10px;
+    }
+
+
+    .card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 772px) {
+    .card-text {
+        text-align: left;
+        padding-bottom: 2px;
+        line-height: 1rem;
+    }
+}
 
 
 
