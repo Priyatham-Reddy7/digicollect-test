@@ -3,7 +3,6 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-        {/* <button className='btn help-desk btn-primary mb-0'>HelpDesk</button> */}
         <footer className='p-2 bg-primary text-white text-center position-relative'>
             <div className="container">
                 <p className="lead">&copy; Copyright 2014 - 2021 DigiCollect - All Rights Reserved</p>
